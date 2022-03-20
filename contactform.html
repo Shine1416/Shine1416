@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<style>
+body {
+    font-family: "Times New Roman", Times, serif;
+  background-image: url("/home/shine/Downloads/Sunset_2007-1.jpg");
+  background-repeat: no-repeat;
+  color: black;
+  max-width: auto;
+  
+  margin-left: 30px;
+  margin-top: 100px;
+  
+
+}
+
+
+td {
+    height:max-content;
+    padding: 10px;
+}
+
+#email{
+    width:300px;
+}
+
+#phone1,#phone2,#phone3{
+width:90px;
+}
+#messagesub{
+    width:150px;
+}
+textarea#boxsec{
+    width:310px;
+}
+.bottomline{
+    height: auto;
+    padding-bottom:66px ;
+    border-bottom:2px solid rgb(227, 220, 230);
+  
+}
+
+#submit{
+    margin-left: 140px;
+    clear: both;
+    height: 30px;
+    width: 100px;
+  
+}
+#submit:hover{
+    background-color: brown;
+}
+#boxmain{
+position: relative;
+}
+#boxsec{
+    position: absolute;
+
+}
+</style>
+
+
+
+<body>
+
+     <div>
+        <h1>CONTACT FORM</h1>
+        </div>
+
+    <div>
+
+         <form action="/action_page.php"> 
+            
+             <table class="bottomline">
+                 <tr>
+            <td><label for="fname">Your Name:</label></td> 
+             <td><input type="text" id="fname" name="fname" placeholder="Firstname">
+             <input type="text" id="lname" name="lname" placeholder="Lastname">
+            </td>
+</tr>
+            
+            
+       <tr>
+           <td><label for="email">Your Email:</label></td> 
+           <td> <input type="email" id="email" name="email" placeholder="e.g@hello.contact.net"></td> 
+        </tr>
+       
+        <tr> 
+           <td> <label for="Phone">Phone*:</label></td> 
+           <td><input type="tel" id="phone1" name="phone1" placeholder="###" pattern="[0-9]{3}" required>
+   <input type="tel" id="phone2" name="phone2" placeholder="###" pattern="[0-9]{3}" required>
+   <input type="tel" id="phone3" name="phone3" placeholder="####" pattern="[0-9]{4}" required></td> 
+        </tr>
+        
+           <tr>
+            <td><label for="messagesub">Message Subject*:</label></td> 
+           <td><select id="messagesub" name="messagesub">
+    
+   
+    <option value="Enquiry">Enquiry</option>
+     <option value="Complaint">Complaint</option>
+    <option value="Others">Others</option>
+   
+  </select></td> 
+</tr>
+
+                                                                        
+        <tr>
+
+        
+            <td id="boxmain"><label for="message">Message:</label></td>
+            <td id="boxsec"><textarea id="boxsec"   name="message" rows="5" cols="20" placeholder="..."></textarea></td>
+                                                                                    
+
+        </table>
+        <div><input id="submit" type="submit"></div>
+        
+        </form>
+    </div>
+
+  
+</body>
+</html>
